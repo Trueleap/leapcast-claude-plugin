@@ -36,7 +36,7 @@ Annotations: ro = read-only, d = destructive, i = idempotent, ow = open world (e
 | Tool | Purpose | Inputs | Annotations |
 | --- | --- | --- | --- |
 | `list_recordings` | Recordings across all the user's organizations, newest first, with playback links | `meetingId`, `search` (title text), `limit` 1–50 (default 10), `cursor` | ro, i |
-| `play_recording` | Playback link cued to a moment; returns `playbackUrl`, `startAtSeconds`, `recordingStartedAt`, `durationSeconds` and a text link ending in `#t=<seconds>`. Defaults to the newest recording and clamps `at` to its length; pass `recordingId` from `list_recordings` when another recording covers the moment | `meetingId`, `at` (`12:34`, `1:02:03` or seconds), `transcriptId`, `recordingId` | ro, i |
+| `play_recording` | Playback link cued to a moment; returns `playbackUrl`, `startAtSeconds`, `recordingStartedAt`, `durationSeconds` and a text link ending in `#t=<seconds>`. Picks the session recording whose window contains the moment, or answers `moment_not_recorded`; pass `recordingId` from `list_recordings` to force one | `meetingId`, `at` (`12:34`, `1:02:03` or seconds), `transcriptId`, `recordingId` | ro, i |
 
 ## Live
 

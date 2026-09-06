@@ -21,6 +21,7 @@ as below. Never retry a write blindly.
 | `no_transcript_yet` | No session of the meeting has a ready transcript | Say processing is not finished; suggest trying after the meeting ends |
 | `no_summary_yet` | Transcript exists but the summary is not ready, or none ready at all | Offer `get_meeting_transcript` |
 | `no_recording` | No uploaded recording for the meeting | Say so; offer the transcript or summary |
+| `moment_not_recorded` | The session's recordings all started later or ended earlier than the requested moment | Say the moment was not recorded; offer `list_recordings` to show what exists, or another moment |
 
 ## Writes and live
 

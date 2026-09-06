@@ -101,8 +101,9 @@ action to take is in `references/errors.md`. The ones met most often:
 - `unauthorized`: connection expired, reconnect from `/mcp`.
 - `insufficient_scope`: read-only connection, reconnect with write.
 - `meeting_not_found`, `not_found`, `forbidden`: wrong id or wrong active organization.
-- `no_transcript_yet`, `no_summary_yet`, `no_recording`: processing not finished or nothing
-  uploaded; say so plainly and offer what exists.
+- `no_transcript_yet`, `no_summary_yet`, `no_recording`, `moment_not_recorded`: processing not
+  finished, nothing uploaded, or the moment lies outside every recording; say so plainly and
+  offer what exists.
 - `rate_limited`: wait the number of seconds in the message before retrying.
 
 ## Limits and data handling

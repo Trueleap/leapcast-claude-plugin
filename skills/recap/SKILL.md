@@ -10,6 +10,8 @@ allowed-tools:
   - mcp__plugin_leapcast_leapcast__search_transcript
   - mcp__plugin_leapcast_leapcast__search_meetings
   - mcp__plugin_leapcast_leapcast__play_recording
+  - mcp__plugin_leapcast_leapcast__list_recordings
+  - mcp__plugin_leapcast_leapcast__get_meeting
   - mcp__plugin_leapcast_leapcast__list_organizations
 ---
 
@@ -31,8 +33,12 @@ followed by a quoted phrase to locate).
    page of `get_meeting_transcript` instead.
 4. If a phrase was given, call `search_transcript` with it. Show the matching turns with
    speaker and timestamp. Then call `play_recording` with the best hit's `at` and the
-   `transcriptId`, and give the user the direct link ending in `#t=<seconds>`. On
-   `no_recording`, say the meeting has no recording and keep the transcript hits.
+   `transcriptId`, and give the user the direct link ending in `#t=<seconds>` (build it from
+   `playbackUrl` and `startAtSeconds` if the text does not already contain it). If the
+   returned start sits at the end of the recording or the recording started after the
+   moment, the session has more than one recording: call `list_recordings` for the meeting,
+   choose the one whose start and duration contain the moment, and play again with its
+   `recordingId`. On `no_recording`, say the meeting has no recording and keep the hits.
 5. If no phrase was given, end by offering to search the transcript for one.
 
 Do not paginate the whole transcript unless the user asks. On `unauthorized`, tell the user

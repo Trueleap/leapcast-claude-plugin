@@ -49,12 +49,18 @@ Never guess an id. Resolve a meeting by title with `list_past_meetings` or
    days, at most 20 meetings), or `search_transcript` inside one meeting. Matching is a
    case-insensitive substring match, so search for short distinctive words.
 2. Each hit carries an `at` timestamp (`mm:ss` or `h:mm:ss`) and a `transcriptId`.
-3. Play: `play_recording` with `meetingId`, that `at` and that `transcriptId`. The result
-   includes a direct link ending in `#t=<seconds>` that opens the recording at the moment,
-   already corrected for the gap between transcript time and recording time. Give the user
-   that link; it stays valid for about two days.
-4. `play_recording` also accepts `at` as a number of seconds, and `recordingId` when a
-   meeting has several recordings.
+3. Play: `play_recording` with `meetingId`, that `at` and that `transcriptId`. The text
+   result carries a direct link ending in `#t=<seconds>` that opens the recording at the
+   moment, already corrected for the gap between transcript time and recording time. If only
+   `playbackUrl` and `startAtSeconds` are visible, build the link as
+   `<playbackUrl>#t=<startAtSeconds>`. Give the user that link; it stays valid for about
+   two days.
+4. Check coverage. A session can have several recordings, and `play_recording` defaults to
+   the newest one, clamping `at` to its length when the moment lies outside it. When the
+   returned `startAtSeconds` sits at the very end, or `recordingStartedAt` is later than the
+   moment, call `list_recordings` with the `meetingId`, pick the recording whose start and
+   duration contain the moment, and call `play_recording` again with its `recordingId`.
+   `at` also accepts a plain number of seconds.
 
 ## Reading transcripts and summaries
 

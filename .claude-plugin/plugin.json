@@ -1,6 +1,6 @@
 {
   "name": "leapcast",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Meetings, summaries, transcripts, recordings and live rooms from Leapcast, inside Claude Code. Connects to the hosted Leapcast MCP server over OAuth (you sign in and consent in the browser); collects no usage telemetry. Privacy: https://trueleapinc.com/privacy-policy",
   "author": {
     "name": "TrueLeap Inc",

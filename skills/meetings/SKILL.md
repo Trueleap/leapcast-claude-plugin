@@ -7,6 +7,7 @@ allowed-tools:
   - mcp__plugin_leapcast_leapcast__list_upcoming_meetings
   - mcp__plugin_leapcast_leapcast__list_meeting_invites
   - mcp__plugin_leapcast_leapcast__who_is_live
+  - mcp__plugin_leapcast_leapcast__get_meeting
   - mcp__plugin_leapcast_leapcast__list_organizations
 ---
 

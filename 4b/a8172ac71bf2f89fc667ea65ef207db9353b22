@@ -1,0 +1,45 @@
+.claude-plugin/marketplace.json
+  s_9016ff06954bcc::t_296dce525095b5 1-17
+.claude-plugin/plugin.json
+  s_9016ff06954bcc::t_93c77501b0e7f4 1-21
+.github/workflows/validate.yml
+  s_9016ff06954bcc::t_eacd5735b336c1 1-17
+.gitignore
+  s_9016ff06954bcc::t_54e6820e54d97a 1
+.mcp.json
+  s_9016ff06954bcc::t_ce4d1592767680 1-8
+LICENSE
+  s_9016ff06954bcc::t_c6a836e40973df 1-21
+README.md
+  s_9016ff06954bcc::t_95884b5d15d070 1-59
+skills/leapcast-connector/SKILL.md
+  s_9016ff06954bcc::t_be049a4abf88bc 1-113
+skills/leapcast-connector/references/errors.md
+  s_9016ff06954bcc::t_173c41a4e6bddd 1-46
+skills/leapcast-connector/references/tools.md
+  s_9016ff06954bcc::t_f513e03f1ea244 1-61
+skills/meetings/SKILL.md
+  s_9016ff06954bcc::t_b6487a99d966bd 1-35
+skills/recap/SKILL.md
+  s_9016ff06954bcc::t_a0dadd730a6079 1-40
+skills/schedule/SKILL.md
+  s_9016ff06954bcc::t_30b4958a2d65a2 1-54
+skills/setup/SKILL.md
+  s_9016ff06954bcc::t_b36ddfc1ede34e 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "4ba8172ac71bf2f89fc667ea65ef207db9353b22",
+  "prompts": {},
+  "sessions": {
+    "s_9016ff06954bcc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "df61f61f-50a2-497f-89ea-6d7bc53db93c",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Bikash Phukan <bphkns@gmail.com>"
+    }
+  }
+}

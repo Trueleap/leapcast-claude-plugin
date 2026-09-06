@@ -1,0 +1,27 @@
+.claude-plugin/plugin.json
+  s_9016ff06954bcc::t_48277411241cda 3
+skills/leapcast-connector/SKILL.md
+  s_9016ff06954bcc::t_0b6c2636db31d4 52-63
+skills/leapcast-connector/references/tools.md
+  s_9016ff06954bcc::t_69e02a4b955e18 39
+skills/meetings/SKILL.md
+  s_9016ff06954bcc::t_689110b56b404a 10
+skills/recap/SKILL.md
+  s_9016ff06954bcc::t_6bae3bdc3cec04 13-14,36-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "01f0997a39afcd55929350de4cc42590e58bdd3b",
+  "prompts": {},
+  "sessions": {
+    "s_9016ff06954bcc": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "df61f61f-50a2-497f-89ea-6d7bc53db93c",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Bikash Phukan <bphkns@gmail.com>"
+    }
+  }
+}

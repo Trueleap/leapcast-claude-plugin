@@ -1,0 +1,21 @@
+{
+  "name": "leapcast",
+  "version": "0.1.0",
+  "description": "Meetings, summaries, transcripts, recordings and live rooms from Leapcast, inside Claude Code. Connects to the hosted Leapcast MCP server over OAuth (you sign in and consent in the browser); collects no usage telemetry. Privacy: https://trueleapinc.com/privacy-policy",
+  "author": {
+    "name": "TrueLeap Inc",
+    "email": "support@leapcast.ai",
+    "url": "https://leapcast.ai"
+  },
+  "homepage": "https://leapcast.ai/connect",
+  "repository": "https://github.com/Trueleap/leapcast-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "leapcast",
+    "meetings",
+    "transcripts",
+    "recordings",
+    "scheduling",
+    "mcp"
+  ]
+}

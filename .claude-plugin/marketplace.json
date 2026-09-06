@@ -1,0 +1,17 @@
+{
+  "name": "leapcast",
+  "owner": {
+    "name": "TrueLeap Inc",
+    "email": "support@leapcast.ai",
+    "url": "https://leapcast.ai"
+  },
+  "description": "Official Leapcast plugins for Claude Code: meetings, summaries, transcripts, recordings and live rooms through the hosted Leapcast MCP server.",
+  "plugins": [
+    {
+      "name": "leapcast",
+      "source": "./",
+      "description": "Meetings, summaries, transcripts, recordings and live rooms from Leapcast, inside Claude Code. Hosted MCP server, OAuth sign-in, no telemetry.",
+      "homepage": "https://leapcast.ai/connect"
+    }
+  ]
+}

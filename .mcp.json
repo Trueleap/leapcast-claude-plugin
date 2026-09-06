@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "leapcast": {
+      "type": "http",
+      "url": "https://mcp.leapcast.ai/mcp"
+    }
+  }
+}

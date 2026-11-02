@@ -17,16 +17,17 @@ change meetings). `/leapcast:setup` walks through this and checks the connection
 
 ## What you can do
 
-- `/leapcast:meetings` — upcoming meetings, who is live, pending invitations.
+- `/leapcast:meetings` — upcoming meetings, who is live, pending invitations, a meeting's QR code.
 - `/leapcast:recap "design review" "budget"` — summary of a past meeting, the turns where a phrase
   was said, and a recording link that opens at that moment.
 - `/leapcast:schedule 30 min onboarding sync next Tuesday 10:00 with ana@example.com` — creates,
   moves or cancels meetings after showing you the details and asking first.
 - Or just ask: "What meetings do I have this week?", "Summarize yesterday's standup",
-  "Play the moment we talked about the launch date", "Which of my organizations is active?".
+  "Play the moment we talked about the launch date", "Cut a clip of that moment",
+  "How do Leapcast recordings work?", "Which of my organizations is active?".
 
-The connector exposes 20 tools; the skill `leapcast-connector` teaches Claude which id each tool
-needs, how transcript search chains into playback, and what every error means.
+The connector exposes 38 tools; the skill `leapcast-connector` teaches Claude which id each tool
+needs, how transcript search chains into playback and clips, and what every error means.
 
 ## How it works
 
@@ -36,7 +37,7 @@ needs, how transcript search chains into playback, and what every error means.
   Access tokens last one hour and refresh automatically. Disconnect any time from `/mcp`.
 - Data: tools act as you, inside one active Leapcast organization. The connector stores only
   which organization is active for this connection. Writes (scheduling, invitations,
-  cancellations) always ask you first.
+  cancellations, clips, host controls) always ask you first.
 
 ## Other clients
 
